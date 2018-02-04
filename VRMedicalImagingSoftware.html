@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Kyle Seidenthal | VR Medical Imaging Software</title>
+  <meta name="description" content="Portfolio for Kyle Seidenthal">
+  <meta name="author" content="Kyle Seidenthal">
+  <link rel="icon" href="images/MyLogo.png">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  -------------------------------------------------- -->
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+  <!-- SCRIPTS
+  --------------------------------------------------------------->
+  <script src="javascripts/BackToTopButton.js"></script>
+  <script src="javascripts/ResponsiveNavbar.js"></script>
+
+
+</head>
+<body>
+
+  <div class="topnav" id="navBar">
+    <a href="index.html#home" class="homelink"
+        title="Kyle Seidenthal's Homepage">Kyle Seidenthal</a>
+    <img src="images/MyLogo.png" class="logo" alt="logo"/>
+    <div class="rightlinks">
+      <a href="index.html#about" title="About Kyle">About</a>
+      <a href="index.html#portfolio"
+            title="See Kyle's Portfolio">Portfolio</a>
+      <a href="index.html#always_learning" title="Always Learning">Always Learning</a>
+      <a href="index.html#contact" title="Contact Kyle">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
+  </div>
+
+<div class="row lightgreen too_high" id="VRMedicalImaging">
+	<div class="portfolio-x"><a href="index.html#portfolio" title="Return to Portfolio"><i class="fa fa-window-close" aria-hidden="true"></i></a></div>
+	<div class="container">
+		<div class="Twelve columns">
+			<h2>Virtual Reality Medical Imaging Software</h2>
+			<p>As part of the course <i> CMPT 371: Software Management </i> we were required to participate in a group of other classmates to
+        design, implement and test a software system.  I was placed in a team of 10 other members.  We were to choose a project
+        from a series of proposals given from stakeholders from around Saskatoon.  We chose to work with <i>Luxsonic</i>, a medical imaging
+        startup, to work on their proposal of an image analysis software in VR.  This project gave us the opportunity to experience different stages of
+        software development, as well as team management.
+			</p>
+
+      <p>
+        We worked with our stakeholder to discover what they required from the system, as well as a few practising radiologists.  We chose
+        to develop the software for the Oculus Rift, a VR headset, because it had the option of using the 'Touch' controllers.  Our goal was
+        to create an intuitive and natural interface for radiologists to work with.  There were many challenges with this project, as no one
+        on our team was familiar with VR technology and VR is still relatively new.  It was a great opportunity to try something very different.
+      </p>
+
+
+		</div>
+	</div>
+</div>
+
+<div class="row too_high" id="VRScreenshot">
+	<div class="container">
+		<div class="twelve columns">
+			<img class="robotwar" src="images/VR_2.png" alt="The user interface for the system"/>
+		</div>
+	</div>
+</div>
+
+<div class="row lightgreen too_high">
+  <div class="container">
+    <div class="six columns">
+      <h3>Tools Used</h3>
+      <ul>
+        <li>Unity 3D</li>
+        <li>C#</li>
+        <li>Oculus Rift</li>
+        <li>Git</li>
+      </ul>
+    </div>
+    <div class="six columns">
+      <h3>My Contributions</h3>
+      <ul>
+        <li>Gathered requirements</li>
+        <li>Software architecture</li>
+        <li>UI design</li>
+        <li>Attended weekly meetings</li>
+        <li>Unit testing</li>
+        <li>Created and maintained Design documentation</li>
+        <li>Research on Oculus Rift best practices and UI design</li>
+        <li>Took part in bug parties to find flaws in the system</li>
+        <li>Bi-monthly presentations on project status</li>
+        <li>Implemented some simple shaders to change image properties</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<button onclick="returnToTop()" id="returnToTopBtn" title="Scroll to Top">Top</button>
+
+<footer class="grey" id="contact">
+	<div class="container">
+		<div class="row twelve columns">
+
+			<ul class="social">
+				<li class="linkedin"><a href="https://ca.linkedin.com/in/kyle-seidenthal"
+          title="Visit Kyle's Linkedin Page" target="_blank">
+          <i class="fa fa-linkedin-square fa-lg"></i></a>
+        </li>
+				<li class="email"><a><i id="emailButton" class="fa fa-envelope fa-lg"></i></a></li>
+			</ul>
+          <p class="copyright"> &copy; Kyle Seidenthal 2017 </p>
+		</div>
+</footer>
+
+<!-- Email Modal -->
+<div id="modal" class="modal">
+  <div class="modal_content">
+    <div class="modal_header">
+      <span class="modal_close">&times;</span>
+      <h2>Lets Get In Touch!</h2>
+    </div>
+    <div class="modal_body">
+      <p>If you have been brought here by my resume, the best way to contact me
+         is with the contact details given on the resume </p>
+
+      <p>Otherwise, you may use the following email address: seidenthal.kyle@gmail.com</p>
+    </div>
+    <div class="modal_footer">
+      <h3> Thank You For Your Interest! </h3>
+    </div>
+  </div>
+</div>
+
+<script src="javascripts/ShowModal.js"></script>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

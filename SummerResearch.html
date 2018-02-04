@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Kyle Seidenthal | Summer Research: P2IRC</title>
+  <meta name="description" content="Portfolio for Kyle Seidenthal">
+  <meta name="author" content="Kyle Seidenthal">
+  <link rel="icon" href="images/MyLogo.png">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  -------------------------------------------------- -->
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+  <!-- SCRIPTS
+  --------------------------------------------------------------->
+  <script src="javascripts/BackToTopButton.js"></script>
+  <script src="javascripts/ResponsiveNavbar.js"></script>
+
+
+</head>
+<body>
+
+  <div class="topnav" id="navBar">
+    <a href="index.html#home" class="homelink"
+        title="Kyle Seidenthal's Homepage">Kyle Seidenthal</a>
+    <img src="images/MyLogo.png" class="logo" alt="logo"/>
+    <div class="rightlinks">
+      <a href="index.html#about" title="About Kyle">About</a>
+      <a href="index.html#portfolio"
+            title="See Kyle's Portfolio">Portfolio</a>
+      <a href="index.html#always_learning" title="Always Learning">Always Learning</a>
+      <a href="index.html#contact" title="Contact Kyle">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
+  </div>
+
+<div class="row light_brown too_high" id="SummerResearch">
+	<div class="portfolio-x"><a href="index.html#portfolio" title="Return to Portfolio"><i class="fa fa-window-close" aria-hidden="true"></i></a></div>
+	<div class="container">
+		<div class="four columns">
+			<img class="me" src="images/Me.jpg" alt="Me installing my sensor system"/>
+		</div>
+		<div class="eight columns">
+			<h2>Summer Research Project: P2IRC</h2>
+			<p>I had the opportunity to spend my summer working in the DISCUS lab on the P2IRC project at the University of Saskatchewan.
+				My project for the summer was to create a prototype sensor data hub to collect data from sensors out in a field.
+				We repurposed some old bluetooth sensors to interface with our system.  I used a raspberry pi with bluetooth capabilities
+				to collect the data.  I set up a database, and a system for connecting to the pi from anywhere on campus.  The system was to
+				go out in a field for collecting data on canola.  A large issue with canola fields is their general lack of power. To solve this, I connected the pi
+				to a large battery that charged itself from a solar panel.  I then made the system waterproof and we deployed for a demo.
+			</p>
+			<p>
+				We also added the ability to connect a USB camera to the system.  This allowed us to live stream the field to our lab for image analysis.
+				Overall the prototype worked, and it was a fun project to work on.
+      </p>
+      <p>
+         For more information on the P2IRC project, you can visit their site: <a class="dark_redlink "href="http://p2irc.usask.ca/" target="_blank" title="Visit the Official P2IRC Site">http://p2irc.usask.ca/ </a>
+			</p>
+			<br/><br/><br/>
+		</div>
+	</div>
+</div>
+
+<div class="row white too_high">
+  <div class="container">
+    <div class="six columns">
+      <h3>Tools Used</h3>
+      <ul>
+        <li>Python</li>
+        <li>Numpy and Pandas</li>
+        <li>Git</li>
+        <li>Rasperry Pi</li>
+        <li>Bash scripting</li>
+        <li>Ubuntu</li>
+      </ul>
+    </div>
+    <div class="six columns">
+      <h3>My Contributions</h3>
+      <ul>
+        <li>Researched raspberry pi parts for purchase</li>
+        <li>Designed prototype sensor collection system</li>
+        <li>Created software to interface with the sensor collection system</li>
+        <li>Created scripts for data analysis</li>
+        <li>Testing for scripts and data collection</li>
+        <li>Designed and maintained an sql database</li>
+        <li>Manual set up of cameras and sensor systems</li>
+        <li>Created and presented a poster on data analysis of soil bacteria</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<button onclick="returnToTop()" id="returnToTopBtn" title="Scroll to Top">Top</button>
+
+<footer class="grey" id="contact">
+	<div class="container">
+		<div class="row twelve columns">
+
+			<ul class="social">
+				<li class="linkedin"><a href="https://ca.linkedin.com/in/kyle-seidenthal"
+          title="Visit Kyle's Linkedin Page" target="_blank">
+          <i class="fa fa-linkedin-square fa-lg"></i></a>
+        </li>
+				<li class="email"><a><i id="emailButton" class="fa fa-envelope fa-lg"></i></a></li>
+			</ul>
+          <p class="copyright"> &copy; Kyle Seidenthal 2017 </p>
+		</div>
+</footer>
+
+<!-- Email Modal -->
+<div id="modal" class="modal">
+  <div class="modal_content">
+    <div class="modal_header">
+      <span class="modal_close">&times;</span>
+      <h2>Lets Get In Touch!</h2>
+    </div>
+    <div class="modal_body">
+      <p>If you have been brought here by my resume, the best way to contact me
+         is with the contact details given on the resume </p>
+
+      <p>Otherwise, you may use the following email address: seidenthal.kyle@gmail.com</p>
+    </div>
+    <div class="modal_footer">
+      <h3> Thank You For Your Interest! </h3>
+    </div>
+  </div>
+</div>
+
+<script src="javascripts/ShowModal.js"></script>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

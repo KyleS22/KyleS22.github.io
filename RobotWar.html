@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Kyle Seidenthal | Robot War</title>
+  <meta name="description" content="Portfolio for Kyle Seidenthal">
+  <meta name="author" content="Kyle Seidenthal">
+  <link rel="icon" href="images/MyLogo.png">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  -------------------------------------------------- -->
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+  <!-- SCRIPTS
+  --------------------------------------------------------------->
+  <script src="javascripts/BackToTopButton.js"></script>
+  <script src="javascripts/ResponsiveNavbar.js"></script>
+
+
+</head>
+<body>
+
+  <div class="topnav" id="navBar">
+    <a href="index.html#home" class="homelink"
+        title="Kyle Seidenthal's Homepage">Kyle Seidenthal</a>
+    <img src="images/MyLogo.png" class="logo" alt="logo"/>
+    <div class="rightlinks">
+      <a href="index.html#about" title="About Kyle">About</a>
+      <a href="index.html#portfolio"
+            title="See Kyle's Portfolio">Portfolio</a>
+      <a href="index.html#always_learning" title="Always Learning">Always Learning</a>
+      <a href="index.html#contact" title="Contact Kyle">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
+  </div>
+
+<div class="row blue too_high" id="RobotWar">
+	<div class="portfolio-x"><a href="index.html#portfolio"
+    title="Return to Portfolio">
+    <i class="fa fa-window-close" aria-hidden="true"></i></a>
+  </div>
+	<div class="container">
+		<div class="twelve columns">
+			<h2>Robot War</h2>
+			<p>Robot war was created as a group project for <i>CMPT 370 - Intermediate Software Engineering</i>.  I worked in a team
+				of five members.  The task for this project was to take a simple board game, the robot arena game, and develop a piece
+				of software that emulated it.  We studied and used the Waterfall method of development and implemented the system in java.
+				Over the course of the semester we defined the requirements for our system, created a design document, devised a test plan,
+				and finally implemented the
+				system we had designed.
+			</p>
+			<p>The game is a turn-based strategy game for 2, 3, or 6 players.  Each player gets a team of three robots: one scout, one tank, and one sniper.
+				Each type of robot has a different view range, movement count, and health.  The last player to have a live robot on the board wins the game.
+			</p>
+			<p>The major feature in our version of the system was networked mulltiplayer.  I did some research on the best ways to implement
+			networking in java and presented my findings to my team.  Then a group member and I implemented the server and client system to work
+			with our game.  Adding features like fog of war and online multiplayer to a simple board game like this made a huge difference for the
+			way people played the game.  This was a very valuable experience for me.
+		</div>
+	</div>
+</div>
+
+<div class="row too_high" id="RobotWar">
+	<div class="container">
+		<div class="twelve columns">
+			<h2 class="video_header"> A two player match </h2>
+			<img class="robotwar" src="images/RobotWar.png" alt="Robot War Game"/>
+		</div>
+	</div>
+</div>
+
+<div class="row blue too_high" id="RobotWar">
+  <div class="container">
+    <div class="six columns">
+      <h3>Tools Used</h3>
+      <ul>
+        <li>Java</li>
+        <li>Git</li>
+        <li>Trello</li>
+      </ul>
+    </div>
+    <div class="six columns">
+      <h3>My Contributions</h3>
+      <ul>
+        <li>Gathered requirements</li>
+        <li>Software architecture design</li>
+        <li>Testing</li>
+        <li>Implemented networked multiplayer</li>
+        <li>Organized meetings</li>
+        <li>Wrote user and programmer documentation for the system</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<button onclick="returnToTop()" id="returnToTopBtn" title="Scroll to Top">Top</button>
+
+<footer class="grey" id="contact">
+	<div class="container">
+		<div class="row twelve columns">
+
+			<ul class="social">
+				<li class="linkedin"><a href="https://ca.linkedin.com/in/kyle-seidenthal"
+          title="Visit Kyle's Linkedin Page" target="_blank">
+          <i class="fa fa-linkedin-square fa-lg"></i></a>
+        </li>
+				<li class="email"><a><i id="emailButton" class="fa fa-envelope fa-lg"></i></a></li>
+			</ul>
+          <p class="copyright"> &copy; Kyle Seidenthal 2017 </p>
+		</div>
+</footer>
+
+<!-- Email Modal -->
+<div id="modal" class="modal">
+  <div class="modal_content">
+    <div class="modal_header">
+      <span class="modal_close">&times;</span>
+      <h2>Lets Get In Touch!</h2>
+    </div>
+    <div class="modal_body">
+      <p>If you have been brought here by my resume, the best way to contact me
+         is with the contact details given on the resume </p>
+
+      <p>Otherwise, you may use the following email address: seidenthal.kyle@gmail.com</p>
+    </div>
+    <div class="modal_footer">
+      <h3> Thank You For Your Interest! </h3>
+    </div>
+  </div>
+</div>
+
+<script src="javascripts/ShowModal.js"></script>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
