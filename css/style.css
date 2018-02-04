@@ -605,6 +605,7 @@ ul.social li.email a:hover{
 	color: rgb(255, 0, 0);
 	cursor: pointer;
 }
+ul.social li.github a:hover{color: #333;}
 
 p.email_font{
 	font-size: 0.3em;
