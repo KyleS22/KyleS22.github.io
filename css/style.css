@@ -959,4 +959,31 @@ p.copyright{
 	.learning_date{
 		padding-left: 40%;
 	}
+
+	.article_greeting{
+		font-size: 3em;
+		padding-top: 20%;
+	}
+
+	.vr_buttons_header_image{
+		background-image:
+	     linear-gradient(
+	       rgba(0, 0, 0, 0.5),
+	       rgba(0, 0, 0, 0.5)
+	     ), url("../images/VRButtons.jpg") ;
+			color: white;
+			padding-bottom: 80%;
+	}
+
+	.vr_project_header_image{
+		background-image:
+	     linear-gradient(
+	       rgba(0, 0, 0, 0.5),
+	       rgba(0, 0, 0, 0.5)
+	     ), url("../images/VR_1.png") ;
+			color: white;
+
+			padding-bottom: 50%;
+	}
+
 }
