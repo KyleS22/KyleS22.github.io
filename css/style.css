@@ -961,8 +961,13 @@ p.copyright{
 	}
 
 	.article_greeting{
-		font-size: 3em;
+		font-size: 2.5em;
+		padding: 5px;
 		padding-top: 20%;
+	}
+
+	a.github_project_link{
+		margin-left: 38%;
 	}
 
 	.vr_buttons_header_image{
