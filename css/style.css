@@ -336,6 +336,70 @@ a.view_all_posts:hover{
 		color: white;
 }
 
+.vr_buttons_header_image{
+	background-image:
+     linear-gradient(
+       rgba(0, 0, 0, 0.5),
+       rgba(0, 0, 0, 0.5)
+     ), url("../images/VRButtons.jpg") ;
+		color: white;
+		padding-bottom: 20%;
+}
+
+.vr_project_header_image{
+	background-image:
+     linear-gradient(
+       rgba(0, 0, 0, 0.5),
+       rgba(0, 0, 0, 0.5)
+     ), url("../images/VR_1.png") ;
+		color: white;
+}
+
+.spoopygame_header_image{
+	background-image:
+     linear-gradient(
+       rgba(0, 0, 0, 0.5),
+       rgba(0, 0, 0, 0.5)
+     ), url("../images/SpoopyGameWithLogo.png") ;
+		color: white;
+}
+
+.robotwar_header_image{
+	background-image:
+     linear-gradient(
+       rgba(0, 0, 0, 0.5),
+       rgba(0, 0, 0, 0.5)
+     ), url("../images/RobotWar.png") ;
+		color: white;
+}
+
+.summer_research_header_image{
+	background-image:
+     linear-gradient(
+       rgba(0, 0, 0, 0.5),
+       rgba(0, 0, 0, 0.5)
+     ), url("../images/Me.jpg") ;
+		color: white;
+}
+
+.rob_the_bank_header_image{
+	background-image:
+     linear-gradient(
+       rgba(0, 0, 0, 0.5),
+       rgba(0, 0, 0, 0.5)
+     ), url("../images/RobTheBank.png") ;
+		color: white;
+}
+
+.run_kitty_run_header_image{
+	background-image:
+     linear-gradient(
+       rgba(0, 0, 0, 0.5),
+       rgba(0, 0, 0, 0.5)
+     ), url("../images/RunKittyRun.png") ;
+		color: white;
+}
+
 span.red_highlight{
 	color: #d12929;
 	letter-spacing: auto;
