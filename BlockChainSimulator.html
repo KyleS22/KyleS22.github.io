@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Kyle Seidenthal | Spoopy Game</title>
+  <title>Kyle Seidenthal | Blockchain Simulator</title>
   <meta name="description" content="Portfolio for Kyle Seidenthal">
   <meta name="author" content="Kyle Seidenthal">
   <link rel="icon" href="images/MyLogo.png">
@@ -50,66 +50,69 @@
     <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
   </div>
 
-  <div class="header_image spoopygame_header_image">
+  <div class="header_image blockchain_header_image">
     <div class="container">
       <div class="twelve columns">
-        <p class="article_greeting"> SpoopyGame </p>
+        <p class="article_greeting"> Blockchain Simulator </p>
+        <a class="github_project_link whitelink" title="View the Project on Github" href="https://github.com/KyleS22/BlockchainSimulator" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
       </div>
     </div>
   </div>
 
-<div class="row light_brown too_high" id="SpoopyGame">
-	<div class="portfolio-x"><a href="index.html#portfolio" title="Return to Portfolio"><i class="fa fa-window-close" aria-hidden="true"></i></a></div>
-	<div class="container">
-		<div class="four columns">
-			<img class="spoopy" src="images/SpoopyGameWithLogo.png" alt="SpoopyGame Logo"/>
-			<img src="images/SpoopyGame.png" alt="SpoopyGame in action"/>
-		</div>
-		<div class="eight columns">
-			<p>SpoopyGame is a procedurally generated dungeon crawler/puzzle game.  I helped create it as part of
-							a group project for <i>CMPT 306 - Game Mechanics</i> with three other members. All of the dungeons are proceduarally generated
-							along with the placement of puzzles and monsters.  The player must survive as many levels as they can,
-							and solve puzzles to gain powerups and potions.  As the game progresses, the dungeons get more complicated.
-			</p>
+<div class="row orange3 too_high" id="BlockchainSimulator">
+	<div class="portfolio-x"><a href="index.html#portfolio"
+    title="Return to Portfolio">
+    <i class="fa fa-window-close" aria-hidden="true"></i></a>
+  </div>
 
-			<p> I created all of the art for this game, as well as music and the user interface.  I also helped to ensure puzzles
-			were solvable once they were placed in the map.
+	<div class="container">
+		<div class="twelve columns">
+			<p>
+        For the class <i>CMPT 434: Computer Networks</i> we were required to complete a group project related to a topic in networking.  My group chose
+        to explore Blockchain technology for our project by implementing a simple simulation of a blockchain network.
 			</p>
-			<br/><br/><br/>
+			<p>
+        We used python to implement a program that represented a single node in the
+        network.  There are two main components to each node in our simulation: the mining and chain resolution protocols, and the peer to peer communication protocols.
+        When a node is started it begins to mine empty blocks of data to add to its chain.  Mining consists of computing a hash for the current dataset and timestamp that
+        matches a set difficulty.  When a valid hash is discovered, the block is added to the node's chain and broadcast to other nodes on the network.  At the same time
+        as the mining begins, the node will also send out a UDP broadcast to discover other nodes on the network.  Each node manages a list of nodes currently connected
+        to the network.  When it successfully mines a new block, it will broadcast it to the other nodes in the network.  When a node receives a block message,
+        it checks the cost of the received chain. If the received chain cost is equal to or greater than the node's current chain cost, the node enters a chain resolution protocol.
+        Chain resolution is handled via TCP connection to ensure chain data arrives in the correct order.
+			</p>
+			<p>
+        We used Docker to simulate a network of nodes that we could run the blockchain software on.  The nodes accept any binary data and will add that data to the next
+        block being mined.  For more details on the implementation and protocols, check out the <a class="dark_bluelink" target="_blank "href="https://github.com/KyleS22/BlockchainSimulator/wiki"> wiki documentation</a>,
+        or <a class="dark_bluelink" href="https://github.com/KyleS22/BlockchainSimulator" title="BlockchainSimulator Repo" target="_blank">take a look at the repository</a>.
+      </p>
 		</div>
 	</div>
 </div>
 
-<div class="row">
-	<div class="container">
-		<h2 class="video_header">Check out the video!</h2>
-		<video width="100%" height="auto" controls>
-			<source src="images/SmallSpoopyMovie.mp4" type="video/mp4">
-			Sorry, your browser does not support this video.
-		</video>
-	</div>
-</div>
 
-<div class="row light_brown too_high">
+<div class="row too_high" id="BlockchainSimulator">
   <div class="container">
     <div class="six columns">
       <h3>Tools Used</h3>
       <ul>
-        <li>Unity 3D</li>
         <li>Git</li>
-        <li>C#</li>
-        <li>LMMS</li>
-        <li>Trello</li>
+        <li>Docker</li>
+        <li>Python</li>
+        <li>Google Protobufs</li>
       </ul>
     </div>
     <div class="six columns">
       <h3>My Contributions</h3>
       <ul>
-        <li>Concept design</li>
-        <li>Created art</li>
-        <li>Created Soundtrack</li>
-        <li>Implementation of procedural generation</li>
-        <li>Implemented checks to ensure levels were solvable</li>
+        <li>Research on Blockchain Protocols</li>
+        <li>Heartbeat and Discovery of Nodes</li>
+        <li>TCP framing</li>
+        <li>Design of Protocols</li>
+        <li>Wiki and Pydoc Documentation</li>
+        <li>Acceptance Testing</li>
       </ul>
     </div>
   </div>
