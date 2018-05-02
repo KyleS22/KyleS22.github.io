@@ -101,6 +101,7 @@ h2{
 	font-family: 'Satisfy', sans-serif;
 	font-size: 3em;
 	margin: 0.67em;
+	text-align: center;
 }
 
 p{
@@ -271,6 +272,14 @@ a.view_all_posts:hover{
 	color:#b77af4
 }
 
+.dark_bluelink{
+	color: #283897;
+}
+
+.whitelink{
+	color: #ffffff;
+}
+
 .greeting{
 	font-size: 4em;
 	font-family: 'Exo', sans-serif;;
@@ -292,7 +301,40 @@ a.view_all_posts:hover{
 	background-size: cover;
 }
 
+.header_image{
+	padding: 5% 2%;
+	/* Set a specific height */
+	height: 500px;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
+.article_greeting{
+	font-size: 4em;
+	/* font-family: 'Exo', sans-serif;; */
+	font-family: 'Bowlby One SC', cursive;
+	/* padding-top: 20%; */
+	/* margin-top: 20px; */
+	text-align: center;
+	/* background: rgb(0, 0, 0); /* fallback color */
+	/* background: rgba(0, 0, 0, 0.7); */
+	padding: 30px; */
+	color: white;
+	margin-top: 15%;
+}
+
+/* Article Header Images */
+.blockchain_header_image{
+	background-image:
+     linear-gradient(
+       rgba(0, 0, 0, 0.5),
+       rgba(0, 0, 0, 0.5)
+     ), url("../images/BlockchainImage.png") ;
+		color: white;
+}
 
 span.red_highlight{
 	color: #d12929;
@@ -340,6 +382,7 @@ li.skill_tag{
 	padding-right: 15px;
 	border-radius: 40px;
 }
+
 
 /* Header & Navigation
 ----------------------------------------*/
@@ -431,6 +474,26 @@ header.main-nav{
 
 .topnav .icon{
 	display: none;
+}
+
+.github_project_link{
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+h2.github_project_link{
+	display: inline;
+}
+
+a.github_project_link{
+	font-size: 5em;
+	margin-left: 45%;
+	/*padding-left: 45%; */
+	/* color: #333; */
+}
+
+a.github_project_link:hover{
+	color:#0087ff;
 }
 
 /* Images & Media
