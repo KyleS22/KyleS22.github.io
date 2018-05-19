@@ -400,6 +400,15 @@ a.view_all_posts:hover{
 		color: white;
 }
 
+.force_of_nature_header_image{
+	background-image:
+     linear-gradient(
+       rgba(0, 0, 0, 0.5),
+       rgba(0, 0, 0, 0.5)
+     ), url("../images/ForceOfNatureGameplayScreenshot.png") ;
+		color: white;
+}
+
 span.red_highlight{
 	color: #d12929;
 	letter-spacing: auto;
