@@ -7,7 +7,7 @@ const blockchainSimulator = {
 }
 
 const  VRInterface = {
-    url : "AStudyOnUserInterfacesInVR.html.html",
+    url : "AStudyOnUserInterfacesInVR.html",
     imageSrc : "images/VRButtons.jpg",
     title: "A Study On User Interface Interactions With Buttons In Virtual Reality",
     tags: ["School Projects", "Virtual Reality"],
