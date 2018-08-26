@@ -9,11 +9,9 @@ function scroll(){
   var navBar = document.getElementById("navBar");
   if(document.body.scrollTop > PX_FROM_TOP || document.documentElement.scrollTop > PX_FROM_TOP){
     navBar.className = "topnav fade_navbar";
-    console.log(document.getElementById(NAVBAR_ID).className);
   }else{
     if(navBar.className === "topnav fade_navbar"){
       navBar.className = "topnav at_top";
-      console.log(document.getElementById(NAVBAR_ID).className);
     }
   }
 }

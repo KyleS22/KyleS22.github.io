@@ -456,6 +456,10 @@ li.skill_tag{
 	border-radius: 40px;
 }
 
+.category_button {
+	text-align: center;
+}
+
 
 /* Header & Navigation
 ----------------------------------------*/
