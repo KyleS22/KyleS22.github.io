@@ -28,9 +28,10 @@
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 
   <!-- Scripts
-  ------------------------------------------------->
+  ------------------------------------------------>
   <script src="javascripts/ResponsiveNavbar.js"></script>
   <script src="javascripts/ChangeNavColour.js"></script>
+  <script src="javascripts/HideAndShowCategories.js"></script>
 
 
 
@@ -88,85 +89,50 @@
 
 	<h2 class="portfolio_header">Portfolio</h2>
 
-	<div class="container main">
+  <div id="project_buttons" class="container">
+      <div class="row">
+
+          <div class="three columns category_button">
+              <button onclick="displayProjects('All')">All</button>
+            </div>
+
+          <div class="three columns category_button">
+            <button onclick="displayProjects('School Projects')">School Projects</button>
+          </div>
+
+          <div class="three columns category_button">
+              <button onclick="displayProjects('Tools')">Tools</button>
+          </div>
+    
+          <div class="three columns category_button">
+              <button onclick="displayProjects('Personal Projects')">Personal Projects</button>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="four columns category_button">
+                <button onclick="displayProjects('Computer Networks')">Computer Networks</button>
+              </div>
+                
+            <div class="four columns category_button">
+              <button onclick="displayProjects('Virtual Reality')">Virtual Reality</button>
+            </div>
+      
+            <div class="four columns">
+                <button onclick="displayProjects('Games')">Games</button>
+            </div>
+            
+          </div>
+  </div>
 
 
-		<div class="row">
+	<div id="projects" class="container main">
+    <!-- Contents are generated in HideAndShowCategories.js -->
 
-      <div class="four columns portfolio">
-        <a href="BlockChainSimulator.html" title="Blockchain Simulator">
-          <img src="images/BlockchainImage.png" class="transparent portfolio_img"
-          alt="Blockchain Simulator"/></a>
-        <p>Blockchain Simulator</p>
-      </div>
-
-      <div class="four columns portfolio">
-				<a href="AStudyOnUserInterfacesInVR.html" title="A Study On User Interfaces In Virtual Reality">
-          <img src="images/VRButtons.jpg" class="transparent portfolio_img"
-          alt="A Study On User Interface Interactions With Buttons In Virtual Reality"/></a>
-				<p>A Study On User Interface Interactions With Buttons In Virtual Reality</p>
-			</div>
-
-      <div class="four columns portfolio">
-				<a href="VRMedicalImagingSoftware.html" title="VR Medical Imaging Project">
-          <img src="images/VR_1.png" class="transparent portfolio_img"
-          alt="VR Medical Imaging Software"/></a>
-				<p>Virtual Reality Medical Imaging Software</p>
-			</div>
-
-		</div>
-
-		<div class="row">
-
-      <div class="four columns portfolio">
-        <a href="SpoopyGame.html" title="Spoopy Game Project">
-          <img src="images/SpoopyGameWithLogo.png"
-          class="transparent portfolio_img" alt="SpoopyGame"/></a>
-        <p>SpoopyGame</p>
-      </div>
-
-      <div class="four columns portfolio">
-				<a href="RobotWar.html" title="Robot War Project">
-          <img src="images/RobotWar.png"
-          class="transparent portfolio_img" alt="Robot War"/></a>
-				<p>Robot War</p>
-			</div>
-
-      <div class="four columns portfolio">
-        <a href="SummerResearch.html" title="P2IRC Summer Research">
-          <img src="images/SummerResearch.jpg"
-          class="transparent portfolio_img" alt="Summer Research"/></a>
-        <p>Summer Research: P2IRC</p>
-      </div>
-
-		</div>
-
-    <div class="row">
-
-      <div class="four columns portfolio">
-        <a href="RobTheBank.html" title="Rob the Bank Game">
-          <img src="images/RobTheBank.png"
-          class="transparent portfolio_img" alt="Rob the Bank"/></a>
-        <p>Rob the Bank</p>
-      </div>
-
-      <div class="four columns portfolio">
-				<a href="RunKittyRun.html" title="Run Kitty Run Game">
-          <img src="images/RunKittyRun.png"
-          class="transparent portfolio_img" alt="Run Kitty Run"/></a>
-				<p>Run Kitty Run</p>
-			</div>
-
-      <div class="four columns portfolio">
-        <a href="GameJamMay2018.html" title="Force of Nature">
-          <img src="images/ForceOfNatureGameplayScreenshot.png"
-          class="transparent portfolio_img" alt="Force of Nature"/></a>
-        <p>Force of Nature</p>
-      </div>
-
-		</div>
-	</div>
-</div><!-- Container -->
+    
+  </div><!-- Container -->
 
 <div class="row blog_green1" id="always_learning">
   <h2 class="learning_header"> Always Learning </h2>
