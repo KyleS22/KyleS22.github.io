@@ -7,7 +7,7 @@ const blockchainSimulator = {
 }
 
 const  VRInterface = {
-    url : "AStudyOnUserInterfacesInVR.html.html",
+    url : "AStudyOnUserInterfacesInVR.html",
     imageSrc : "images/VRButtons.jpg",
     title: "A Study On User Interface Interactions With Buttons In Virtual Reality",
     tags: ["School Projects", "Virtual Reality"],
@@ -79,7 +79,15 @@ const dumbSwitcher = {
     date: new Date(2018, 7, 26)
 }
 
-const projects = [blockchainSimulator, VRInterface, VRMedical, spoopyGame, robotWar, summerResearch, robTheBank, runKittyRun, forceOfNature, dumbSwitcher];
+const infoVisProject = {
+    url: "https://kyles22.github.io/Air-Quality-Impact-On-UFO-Sightings/",
+    imageSrc: "images/AirQualityUFODash.png",
+    title: "Air Quality and U.F.O Sightings Dashboard",
+    tags: ["School Projects", "Tools"],
+    date: new Date(2018, 12, 17)
+}
+
+const projects = [blockchainSimulator, VRInterface, VRMedical, spoopyGame, robotWar, summerResearch, robTheBank, runKittyRun, forceOfNature, dumbSwitcher, infoVisProject];
 
 projects.sort(function(a, b) {
     a = a.date;
@@ -129,6 +137,7 @@ function displayProjects(category){
         var anchor = document.createElement("a");
         anchor.href = curProject.url;
         anchor.title = curProject.title;
+        anchor.target = "_blank";
 
         var image = document.createElement("img");
         image.src = curProject.imageSrc;
