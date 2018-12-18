@@ -3,7 +3,8 @@ const blockchainSimulator = {
     imageSrc : "images/BlockchainImage.png",
     title: "Blockchain Simulator",
     tags: ["School Projects", "Computer Networks"],
-    date: new Date(2018, 3, 1)
+    date: new Date(2018, 3, 1),
+    external: false
 }
 
 const  VRInterface = {
@@ -11,7 +12,8 @@ const  VRInterface = {
     imageSrc : "images/VRButtons.jpg",
     title: "A Study On User Interface Interactions With Buttons In Virtual Reality",
     tags: ["School Projects", "Virtual Reality"],
-    date: new Date(2017, 11, 12)
+    date: new Date(2017, 11, 12),
+    external: false
 }
 
 const VRMedical = {
@@ -19,7 +21,8 @@ const VRMedical = {
     imageSrc : "images/VR_1.png",
     title: "VR Medical Imaging Software",
     tags: ["School Projects", "Virtual Reality"],
-    date: new Date(2017, 3, 1)
+    date: new Date(2017, 3, 1),
+    external: false
 }
 
 
@@ -28,7 +31,8 @@ const spoopyGame = {
     imageSrc : "images/SpoopyGameWithLogo.png",
     title: "SpoopyGame",
     tags: ["School Projects", "Games"],
-    date: new Date(2016, 11, 12)
+    date: new Date(2016, 11, 12),
+    external: false
 }
 
 const  robotWar = {
@@ -36,7 +40,8 @@ const  robotWar = {
     imageSrc : "images/RobotWar.png",
     title: "Robot War",
     tags: ["School Projects", "Games", "Computer Networks"],
-    date: new Date(2016, 11, 12)
+    date: new Date(2016, 11, 12),
+    external: false
 }
 
 const summerResearch = {
@@ -44,7 +49,8 @@ const summerResearch = {
     imageSrc : "images/SummerResearch.jpg",
     title: "Summer Research: P2IRC",
     tags: ["Computer Networks"],
-    date: new Date(2016, 8, 1)
+    date: new Date(2016, 8, 1),
+    external: false
 }
 
 const robTheBank = {
@@ -52,7 +58,8 @@ const robTheBank = {
     imageSrc : "images/RobTheBank.png",
     title: "Rob the Bank",
     tags: ["Games"],
-    date: new Date(2016, 9, 1)
+    date: new Date(2016, 9, 1),
+    external: false
 }
 
 const runKittyRun = {
@@ -60,7 +67,8 @@ const runKittyRun = {
     imageSrc : "images/RunKittyRun.png",
     title: "Run Kitty Run",
     tags: ["Games"],
-    date: new Date(2015, 8, 1)
+    date: new Date(2015, 8, 1),
+    external: false
 }
 
 const forceOfNature = {
@@ -68,7 +76,8 @@ const forceOfNature = {
     imageSrc : "images/ForceOfNatureGameplayScreenshot.png",
     title: "Force of Nature",
     tags: ["Games"],
-    date: new Date(2018, 4, 31)
+    date: new Date(2018, 4, 31),
+    external: false
 }
 
 const dumbSwitcher = {
@@ -76,7 +85,8 @@ const dumbSwitcher = {
     imageSrc: "images/dumbswitcher_logo.png",
     title: "Dual Monitor Background Switcher",
     tags: ["Tools", "Personal Projects"],
-    date: new Date(2018, 7, 26)
+    date: new Date(2018, 7, 26),
+    external: true
 }
 
 const infoVisProject = {
@@ -84,7 +94,8 @@ const infoVisProject = {
     imageSrc: "images/AirQualityUFODash.png",
     title: "Air Quality and U.F.O Sightings Dashboard",
     tags: ["School Projects", "Tools"],
-    date: new Date(2018, 12, 17)
+    date: new Date(2018, 12, 17),
+    external: true
 }
 
 const projects = [blockchainSimulator, VRInterface, VRMedical, spoopyGame, robotWar, summerResearch, robTheBank, runKittyRun, forceOfNature, dumbSwitcher, infoVisProject];
@@ -137,7 +148,10 @@ function displayProjects(category){
         var anchor = document.createElement("a");
         anchor.href = curProject.url;
         anchor.title = curProject.title;
-        anchor.target = "_blank";
+
+        if(curProject.external){
+            anchor.target = "_blank";
+        }
 
         var image = document.createElement("img");
         image.src = curProject.imageSrc;
