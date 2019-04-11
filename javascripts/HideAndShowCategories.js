@@ -98,7 +98,18 @@ const infoVisProject = {
     external: true
 }
 
-const projects = [blockchainSimulator, VRInterface, VRMedical, spoopyGame, robotWar, summerResearch, robTheBank, runKittyRun, forceOfNature, dumbSwitcher, infoVisProject];
+const javaCheckers = {
+    url : "https://kyles22.github.io/JavaCheckers/",
+    imageSrc: "images/JavaCheckers.png",
+    title: "Java Checkers",
+    tags: ["Games", "Personal Projects", "Computer Networks"],
+    date: new Date(2019, 4, 10),
+    external: true
+}
+
+
+
+const projects = [blockchainSimulator, VRInterface, VRMedical, spoopyGame, robotWar, summerResearch, robTheBank, runKittyRun, forceOfNature, dumbSwitcher, infoVisProject, javaCheckers];
 
 projects.sort(function(a, b) {
     a = a.date;
