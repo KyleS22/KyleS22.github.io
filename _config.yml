@@ -28,7 +28,7 @@ github_username:  KyleS22
 #Minimal Mistakes
 locale: "en-CA"
 name: "Kyle Seidenthal"
-minimal_mistakes_skin: "dirt"  #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+minimal_mistakes_skin: "air"  #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 repository: "KyleS22/kyles22.github.io"
 teaser: # A teaser image for related posts.  Goes in /assets/images/imgage.jpg
 logo: "/assets/images/MyLogo.png"# Logo for site. Goes in /assets/images
@@ -96,6 +96,10 @@ collections:
         portfolio:
                 output: true
                 permalink: /:collection/:path/
+tag_archive:
+  type: liquid
+  path: /tags/
+
 
 # Build settings
 #theme: minima
