@@ -19,4 +19,4 @@ Java Checkers was a little project I put together in my spare time, due to my in
 
 The game works by using the local network to check for other users currently playing the game.  You can select a player to challenge, and then the games begin.  Game moves are sent back and forth between players as they complete their turns, until somebody wins.
 
-Check out the project page for more information: [Java Checkers](https://kyles22.github.io/JavaCheckers/)
+Check out the project page for more information: [Java Checkers](https://kyles22.github.io/JavaCheckers/){:target="_blank"}
