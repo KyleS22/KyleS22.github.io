@@ -35,7 +35,6 @@ logo: "/assets/images/MyLogo.png"# Logo for site. Goes in /assets/images
 masthead_title: "Kyle Seidenthal"# If I want the title to be different, but still have my name in the left corner, put it here.
 breadcrumbs: false # Something to do with a beta feature
 words_per_minute: 200 # For estimated reading times
-#paginate: 5
 
 author:
         name: "Kyle Seidenthal"
@@ -96,11 +95,6 @@ collections:
         portfolio:
                 output: true
                 permalink: /:collection/:path/
-tag_archive:
-  type: liquid
-  path: /tags/
-
-
 # Build settings
 #theme: minima
 remote_theme: "mmistakes/minimal-mistakes@4.21.0"
@@ -130,3 +124,10 @@ include: ["_pages"]
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+#
+
+tag_archive:
+  type: liquid
+  path: /tags/
+
+
