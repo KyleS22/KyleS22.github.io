@@ -22,6 +22,7 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 =======================
 {% endcomment %}
 {% assign tags = "" %}
+{% assign num_tags = 0 %}
 {% for tag in rawtags %}
 	{% if tag != "" %}
 		{% if tags == "" %}
@@ -29,12 +30,40 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 		{% endif %}
 		{% unless tags contains tag %}
 			{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+			{% assign num_tags = num_tags | plus: 1 %}
 		{% endunless %}
 	{% endif %}
 {% endfor %}
 
 
-{% comment %}
+{% assign num_rows = num_tags | divided_by: 4.0 %}
+{% assign num_rows = num_rows | ceil %}
+
+{% assign tag_index = 0 %}
+{% assign num_tags = num_tags | plus: 1 %}
+
+<table>
+{% for row in (0..num_rows) %}
+	<tr>
+	{% for col in (0..4) %}
+		{% assign num_posts = 0 %}
+		{% for post in site.portfolio %}
+			{% if post.tags contains tags[tag_index] %}
+				{% assign num_posts = num_posts | plus: 1 %}
+			{% endif %}
+		{% endfor %}
+
+		{% unless tag_index == num_tags %}
+		<td><a href="#{{ tags[tag_index] | slugify }}"> {{ tags[tag_index]}} </a> {{ num_posts }} </td>
+		{% assign tag_index = tag_index | plus: 1 %}
+		{% endunless %}
+	{% endfor %}
+	</tr>
+
+{% endfor %}
+</table>
+
+<!--{% comment %}
 =======================
 The purpose of this snippet is to list all the tags you have in your site.
 =======================
@@ -44,7 +73,7 @@ The purpose of this snippet is to list all the tags you have in your site.
 		<p><a href="#{{ tag | slugify }}"> {{ tag }} </a></p>
 	</li>
 {% endfor %}
-
+-->
 {% comment %}
 =======================
 The purpose of this snippet is to list all your posts posted with a certain tag.
