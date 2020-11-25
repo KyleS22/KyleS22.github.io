@@ -10,7 +10,7 @@ permalink: /java_checkers
 
 author_profile: true
 
-tags: [games, networks, personal projects]
+tags: [Games, Networks, Personal Projects, Java]
 
 date: 2019-04-10
 ---
