@@ -4,7 +4,7 @@ excerpt: "A visualization tool for data correlating U.F.O sightings and air qual
 
 header:
   image: /assets/images/AirQualityUFODash.png
-  teaser: /assets/images/AirQualityUFODash.png
+  teaser: /assets/images/AirQualityTeaser.png
 
 permalink: /air_quality_and_ufo_sightings
 
