@@ -6,7 +6,7 @@ header:
   image: /assets/images/FGTHeader.png
   teaser: /assets/images/FGTTeaser.png
 
-permalink: /friendly_ground_truth
+permalink: /friendly_ground_truth_portfolio
 
 author_profile: true
 
