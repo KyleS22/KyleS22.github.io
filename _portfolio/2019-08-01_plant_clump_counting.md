@@ -10,7 +10,7 @@ permalink: /clump_it_up
 
 author_profile: true
 
-tags: [Python, Machine Learning, Image Processing, Automated Agriculture, P2IRC, Object Detection, Segmentation]
+tags: [Course Projects, Python, Machine Learning, Image Processing, Automated Agriculture, P2IRC, Object Detection, Segmentation]
 
 date: 2019-08-01
 ---
@@ -21,3 +21,4 @@ We decided that it would be easier to count plants in a small area of the whole 
 
 My contributions to the project were managing the dataset and coordinating annotations, documenting the project, and training and testing some simple encoder-decoder networks that directly output the number of plants in a given image.  I also presented a poster about our project at the 4th annual P2IRC symposium, in Saskatoon SK, which won the best poster award.     
 
+Check out the [Repository](https://github.com/KyleS22/Plant_Clump_Counting/tree/development){:target="_blank"}
