@@ -1,0 +1,138 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Kyle Seidenthal
+description: >- # this means to ignore newlines until "baseurl:"
+        Protfolio for Kyle Seidenthal
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://kyles22.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  KyleS22
+
+#Minimal Mistakes
+locale: "en-CA"
+name: "Kyle Seidenthal"
+minimal_mistakes_skin: "air"  #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+repository: "KyleS22/kyles22.github.io"
+teaser: # A teaser image for related posts.  Goes in /assets/images/imgage.jpg
+logo: "/assets/images/MyLogo.png"# Logo for site. Goes in /assets/images
+masthead_title: "Kyle Seidenthal"# If I want the title to be different, but still have my name in the left corner, put it here.
+breadcrumbs: false # Something to do with a beta feature
+words_per_minute: 200 # For estimated reading times
+paginate: 5
+paginate_path: /page:num/
+
+
+author:
+        name: "Kyle Seidenthal"
+        avatar: "/assets/images/avatar.jpg"# For avatar image.  Goes in /assets/images/
+        bio: "M.Sc. Student working in Image Processing and Computer Vision at the University of Saskatchewan."
+        links:
+                - label: "Github"
+                  icon: "fab fa-fw fa-github"
+                  url: "https://github.com/KyleS22"
+
+                - label: "Linkedin"
+                  icon: "fab fa-fw fa-linkedin"
+                  url: "https://ca.linkedin.com/in/kyle-seidenthal"
+
+footer:
+        links:
+                - label: "Github"
+                  icon: "fab fa-fw fa-github"
+                  url: "https://github.com/KyleS22"
+
+                - label: "Linkedin"
+                  icon: "fab fa-fw fa-linkedin"
+                  url: "https://ca.linkedin.com/in/kyle-seidenthal"
+
+
+defaults:
+        # _posts
+        - scope:
+                path: ""
+                type: posts
+          values:
+                layout: single
+                author_profile: true
+                related: true
+                show_date: false # Set to true to show dates by default
+                read_time: false # Show estimated reading time
+                comments: false
+
+defaults:
+        # _pages
+        - scope:
+                path: ""
+                type: pages
+          values:
+                  layout: single
+
+defaults:
+        # _portfolio
+        - scope:
+                path: ""
+                type: portfolio
+          values:
+                layout: portfolio_entry
+                author_profile: true
+                share: false
+                related: true
+
+collections:
+        portfolio:
+                output: true
+                permalink: /:collection/:path/
+# Build settings
+#theme: minima
+remote_theme: "KyleS22/minimal-mistakes" #"mmistakes/minimal-mistakes@4.21.0"
+
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+
+include: ["_pages"]
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+#
+
+tag_archive:
+  type: liquid
+  path: /tags/
+
+
